@@ -1,0 +1,132 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-modal);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #c3a9bf96;
+
+    &--active {
+        display: flex;
+    }
+}
+
+.modal__wrapper {
+    width: 70%;
+    min-width: 750px;
+    // height: 75%;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.modal__header {
+    position: relative;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #f3d8f2;
+}
+
+.modal__title {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.modal__btn-close {
+    position: absolute;
+    top: -24px;
+    right: -24px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color .3s;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 25px;
+        height: 5px;
+        background-color: #fff;
+        border-radius: 3px;
+    }
+    &::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &:hover {
+        background-color: #f14343;
+    }
+}
+
+.modal__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 15px;
+}
+
+.modal__images {
+    position: relative;
+    flex: 1 1 50%;
+    width: 60%;
+    padding-bottom: 30px !important;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 15;
+        width: 50px;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, #fff);
+    }
+}
+
+.modal__info {
+    flex: 1 1 40%;
+}
+
+.modal__row {
+    margin-bottom: 0.5em;
+}
+
+
+// .modal__galery {
+//     width: 100%;
+// }
+.modal__item-block {
+    position: relative;
+    height: 0;
+    padding-top: 100%;
+    border-radius: 15px;
+    background-color: rgb(218, 218, 218);
+}
+.modal__item-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.modal__galery-pagination {
+    
+}
+
+.modal__price {
+    font-size: 2rem;
+    font-weight: bold;
+}

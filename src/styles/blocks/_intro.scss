@@ -1,0 +1,33 @@
+.intro {
+    padding: 50px 0 0;
+}
+
+.intro__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro__title {
+    margin-left: auto;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.intro__title-high {
+    font-size: 4rem;
+}
+
+.intro__img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    background: radial-gradient(#ff00e02e, transparent 70%);
+}
+
+.intro__img {
+    width: 50%;
+}

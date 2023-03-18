@@ -1,0 +1,14 @@
+@mixin font($family, $path, $weight, $style: normal) {
+    @font-face {
+        font-family: $family;
+        font-weight: $weight;
+        font-style: $style;
+        font-display: swap;
+        src:
+            url('#{$path}.woff2') format('woff2'),
+            url('#{$path}.woff') format('woff'),
+            url('#{$path}.ttf') format('truetype');
+    }
+}
+
+@include font('Shantell Sans', './assets/fonts/ShantellSans-ExtraBold', 800);
