@@ -8,6 +8,7 @@
     "build": "gulp build --build",
     "fonts": "gulp fonts",
     "images": "gulp images",
+    "deploy": "npm run build && gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "MaksPopov",
@@ -20,6 +21,7 @@
     "browser-sync": "^2.26.14",
     "cssnano": "^5.0.4",
     "del": "^6.0.0",
+    "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-if": "^3.0.0",
