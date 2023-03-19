@@ -27,7 +27,7 @@ modalsBlock.addEventListener("click", (event) => {
 
 const swiper = new Swiper(".swiper", {
   modules: [Pagination],
-  slidesPerView: 1.2,
+  slidesPerView: 1,
   spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",

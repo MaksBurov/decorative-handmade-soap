@@ -6,6 +6,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
 }
 
 .intro__title {
@@ -24,8 +28,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    width: 90%;
     background: radial-gradient(#ff00e02e, transparent 70%);
+
+    @media (min-width: 768px) {
+        width: 45%
+    }
 }
 
 .intro__img {

@@ -16,11 +16,16 @@
 }
 
 .modal__wrapper {
-    width: 70%;
-    min-width: 750px;
-    // height: 75%;
+    width: 90%;
     border-radius: 30px;
     background-color: #fff;
+
+    @media (min-width: 992px) {
+        width: 70%;
+    }
+    @media (min-width: 1200px) {
+        min-width: 750px;
+    }
 }
 
 .modal__header {
@@ -70,28 +75,23 @@
 }
 
 .modal__body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
     padding: 30px 15px;
+
+    @media (min-width: 576px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 .modal__images {
     position: relative;
-    flex: 1 1 50%;
-    width: 60%;
     padding-bottom: 30px !important;
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 15;
-        width: 50px;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, #fff);
+    
+    @media (min-width: 576px) {
+        width: 60%;
+        flex: 1 1 50%;
     }
 }
 
