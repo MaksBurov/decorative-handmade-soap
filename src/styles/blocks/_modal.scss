@@ -88,6 +88,11 @@
 .modal__images {
     position: relative;
     padding-bottom: 30px !important;
+
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow:  9px 9px 29px #d6d6d6,
+                 -9px -9px 29px #ffffff;
     
     @media (min-width: 576px) {
         width: 60%;
@@ -111,8 +116,6 @@
     position: relative;
     height: 0;
     padding-top: 100%;
-    border-radius: 15px;
-    background-color: rgb(218, 218, 218);
 }
 .modal__item-img {
     position: absolute;
