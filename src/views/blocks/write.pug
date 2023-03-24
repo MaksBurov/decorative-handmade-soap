@@ -1,8 +1,9 @@
 section#write.write
     h2.write__title.title  Написать письмо
     form.write__form.container(action="mailto:test@test.ru" method="get")
-        input(type="text" placeholder="Имя" name="subject").write__field.write__field--input
-        input(type="text" placeholder="email" name="email").write__field.write__field--input
-        textarea( placeholder="Введите сообщение" name="body").write__field.write__field--text
+        label(for="subject").write__label Тема
+        input(type="text" placeholder="Введите тему сообщения" id="subject" name="subject").write__field
+        label(for="body").write__label Сообщение
+        textarea(placeholder="Введите сообщение" id="body" name="body").write__field.write__field--text
         .write__btns
             button(type="submit").write__btn.write__btn--primary Отправить

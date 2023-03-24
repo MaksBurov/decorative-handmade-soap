@@ -42,13 +42,18 @@
 
 .modal__btn-close {
     position: absolute;
-    top: -24px;
-    right: -24px;
-    width: 32px;
+    top: 5px;
+    right: 6px;
+    width: 40px;
     height: 32px;
-    border-radius: 50%;
+
+    border-radius: 10px 30px 10px 10px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+
     cursor: pointer;
-    transition: background-color .3s;
+    transition: background 0.3s;
+   
 
     &::before,
     &::after {
@@ -57,9 +62,9 @@
         top: 50%;
         left: 50%;
         display: block;
-        width: 25px;
-        height: 5px;
-        background-color: #fff;
+        width: 22px;
+        height: 4px;
+        background-color: #f14343;
         border-radius: 3px;
     }
     &::before {
@@ -70,7 +75,13 @@
     }
 
     &:hover {
-        background-color: #f14343;
+        background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    }
+
+    &:active {
+        background: #ffffff;
+        box-shadow: inset 20px 20px 60px #d9d9d9,
+            inset -20px -20px 60px #ffffff;
     }
 }
 

@@ -1,62 +1,86 @@
 .write__title {
-    font-size: 2rem;
-    text-align: center;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .write__form {
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
-    // grid-template-areas: 
-    //     'field text'
-    //     'field text'
-    //     'field button';
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    max-width: 800px;
+  max-width: 800px;
+}
+
+.write__label {
+	position: relative;
+	padding: 0.5em 1em;
+	display: inline-block;
 }
 
 .write__field {
-    padding: 1em 1.5em;
-    border-radius: 15px;
-    background-color: #fff;
+  width: 100%;
+  padding: 1em 1.5em;
+	margin-bottom: 1em;
 
-    &--input {
-        flex: 1 1 48%;
-    }
+  border-radius: 15px;
+  border: none;
+  background-color: #f2e9e5;
+  box-shadow: 9px 9px 29px #cbc4c0, -9px -9px 29px #ffffff;
+  outline-color: transparent;
 
-    &--text {
-        // grid-row: span 3;
-        // grid-area: text;
-        width: 100%;
-        height: 7em;
-    }
+  transition: outline-color 0.3s, background-color 0.3s, box-shadow 0.3s;
+
+  &:focus {
+    background-color: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5, inset -20px -20px 60px #ffffff;
+    outline-color: #ff00e0;
+  }
+
+  &--text {
+		min-height: 5em;
+    height: 7em;
+		max-height: 25em;
+		resize: vertical;
+  }
 }
 
 .write__btns {
-    margin-left: auto;
+	display: flex;
+	justify-content: end;
+  margin-left: auto;
 }
 
 .write__btn {
-    padding: 0.75em 2em;
-    margin-left: 7px;
-    border-radius: 15px;
-    border: 1px solid #ff00e0;
-    color: #fff;
-    cursor: pointer;
+  padding: 0.75em 2em;
+  margin-left: 7px;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
 
-    &--reset {
-        width: 2em;
-        height: 2em;
-    }
-    
-    &--primary {
-        background-color: #ff00e0;
+	background: #f2e9e5;
+  box-shadow: 9px 9px 29px #cbc4c0, -9px -9px 29px #ffffff;
 
-    }
+  &--reset {
+    width: 2em;
+    height: 2em;
+  }
+
+  &--primary {
+    background-color: #ff00e0;
+
+		&:hover,
+		&:focus {
+			background: linear-gradient(145deg, #ff00f0, #e600ca);
+		}
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 0px 2px #f2e9e5, 0 0 0px 4px #ff00e0;
+		}
+		&:active {
+			background: #ff00e0;
+			box-shadow: inset 20px 20px 60px #d900be,
+            inset -20px -20px 60px #ff00ff;
+		}
+  }
 }
 
 .write__btn-icon {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
