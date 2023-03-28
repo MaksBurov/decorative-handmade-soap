@@ -34,14 +34,16 @@ body {
     background-color: #f3d8f2;
     font-family: 'Shantell Sans', cursive;
 
-    &::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: url(../assets/images/background.jpg) no-repeat center /cover;
+    @media (min-width: 1200px) {
+        &::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url(../assets/images/background.jpg) no-repeat center /cover;
+        }
     }
 }
 
