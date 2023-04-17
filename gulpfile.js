@@ -16,7 +16,7 @@ $.tasks.forEach( tasksPath => {
 
 
 exports.fonts = $.gulp.series('fonts', 'cleanFonts')
-exports.images = $.gulp.series('images', 'cleanImages')
+exports.images = $.gulp.series('cleanImagesDist','imagesFromSources','images', 'cleanImages')
 
 exports.build = $.gulp.series(
     'clean',
