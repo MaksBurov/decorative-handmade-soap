@@ -19,8 +19,9 @@ exports.fonts = $.gulp.series('fonts', 'cleanFonts')
 exports.images = $.gulp.series('cleanImagesDist','imagesFromSources','images', 'cleanImages')
 
 exports.build = $.gulp.series(
-    'clean',
-    $.gulp.parallel('views', 'styles', 'scripts', 'fonts', 'images'),
+    $.gulp.parallel('clean', 'cleanImagesDist'),
+    $.gulp.parallel('views', 'styles', 'scripts', 'fonts', 'imagesFromSources'),
+    'images',
     'cleanFonts',
     'cleanImages'
 )
