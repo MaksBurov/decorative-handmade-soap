@@ -5,7 +5,7 @@ const widthWindow = body.clientWidth;
 const worksContainer = body.querySelector(".works__container");
 const modalsBlock = body.querySelector(".modals");
 
-// Opening modals 
+// Opening modals
 worksContainer.addEventListener("click", (event) => {
   const name = event.target.closest(".works__item-block").id.split("--")[1];
 
@@ -13,7 +13,7 @@ worksContainer.addEventListener("click", (event) => {
   body.style.cssText = `
     overflow-y: hidden;
     width: ${widthWindow}px;
-  `
+  `;
 });
 
 //Close modal
