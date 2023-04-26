@@ -1,18 +1,17 @@
-@import
-    'abstracts/variables',
-    'abstracts/fonts',
-    'abstracts/mixins',
-    'abstracts/animations',
-    
-    'base/reset',
-    'base/base',
+@import "abstracts/variables";
+@import "abstracts/fonts";
+@import "abstracts/mixins";
+@import "abstracts/animations";
 
-    'layout/header',
-    'layout/footer',
-    
-    'blocks/intro',
-    'blocks/works',
-    'blocks/write',
-    'blocks/modal';
+@import "base/reset";
+@import "base/base";
 
-    // 'vendors/swiper-bundle.min.scss';
+@import "layout/header";
+@import "layout/footer";
+
+@import "blocks/intro";
+@import "blocks/works";
+@import "blocks/write";
+@import "blocks/modal";
+
+// 'vendors/swiper-bundle.min.scss';
