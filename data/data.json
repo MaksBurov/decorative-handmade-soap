@@ -2,39 +2,39 @@
     "worksList": [
         {
             "id": "work--cake-heart",
-            "link": "./public/assets/images/cake-heart-1.png"
+            "link": "./public/assets/images/cake-heart-1"
         },
         {
             "id": "work--cake-round",
-            "link": "./public/assets/images/cake-round-1.png"
+            "link": "./public/assets/images/cake-round-1"
         },
         {
             "id": "work--rainbow-flavor",
-            "link": "./public/assets/images/rainbow-flavor.jpg"
+            "link": "./public/assets/images/rainbow-flavor"
         },
         {
             "id": "work--duckling-in-shell",
-            "link": "./public/assets/images/duckling-in-shell-0.jpg"
+            "link": "./public/assets/images/duckling-in-shell-0"
         },
         {
             "id": "work--duckling-with-eggs",
-            "link": "./public/assets/images/duckling-with-eggs-0.jpg"
+            "link": "./public/assets/images/duckling-with-eggs-0"
         },
         {
             "id": "work--pib-with-gifts",
-            "link": "./public/assets/images/pib-with-gifts-0.jpg"
+            "link": "./public/assets/images/pib-with-gifts-0"
         },
         {
             "id": "work--jar-of-jam",
-            "link": "./public/assets/images/jar-of-jam-0.jpg"
+            "link": "./public/assets/images/jar-of-jam-0"
         },
         {
             "id": "work--forest-fairy-tale",
-            "link": "./public/assets/images/forest-fairy-tale-0.jpg"
+            "link": "./public/assets/images/forest-fairy-tale-0"
         },
         {
             "id": "work--bunny-with-ears",
-            "link": "./public/assets/images/bunny-with-ears-1.jpg"
+            "link": "./public/assets/images/bunny-with-ears-1"
         }
     ]
 }

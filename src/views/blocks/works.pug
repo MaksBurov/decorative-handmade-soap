@@ -4,6 +4,9 @@ section#works.works
         each work in worksList
             li.works__item
                 div.works__item-block(id= work.id)
-                    img.works__item-img(src= work.link)
+                    picture.works__item-picture
+                        source(srcset= `${work.link}.webp` type="image/webp")
+                        source(srcset= `${work.link}.jpg` type="image/jpeg")
+                        img.works__item-img(src= `${work.link}.jpg`)
 
 
