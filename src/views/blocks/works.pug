@@ -1,39 +1,9 @@
 section#works.works 
     h2.works__title.title Мои работы
     ul.works__container.container 
-        li.works__item
-            div#work--cake-heart.works__item-block
-                img.works__item-img(src="./public/assets/images/cake-heart-1.png")
-        li.works__item
-            div#work--cake-round.works__item-block
-                img.works__item-img(src="./public/assets/images/cake-round-1.png")
-        //- li.works__item
-        //-     div#work--bunny.works__item-block
-        //-         img.works__item-img(src="./public/assets/images/bunny.png")
-        //- li.works__item
-        //-     div#work--cake-round.works__item-block
-        //-         img.works__item-img(src="./public/assets/images/flower-box.png")
-        li.works__item
-            div#work--rainbow-flavor.works__item-block
-                img.works__item-img(src="./public/assets/images/rainbow-flavor.jpg")
-        li.works__item
-            div#work--duckling-in-shell.works__item-block
-                img.works__item-img(src="./public/assets/images/duckling-in-shell-0.jpg")
-        li.works__item
-            div#work--duckling-with-eggs.works__item-block
-                img.works__item-img(src="./public/assets/images/duckling-with-eggs-0.jpg")
-        li.works__item
-            div#work--pib-with-gifts.works__item-block
-                img.works__item-img(src="./public/assets/images/pib-with-gifts-0.jpg")
-        li.works__item
-            div#work--jar-of-jam.works__item-block
-                img.works__item-img(src="./public/assets/images/jar-of-jam-0.jpg")
-        li.works__item
-            div#work--forest-fairy-tale.works__item-block
-                img.works__item-img(src="./public/assets/images/forest-fairy-tale-0.jpg")
-        li.works__item
-            div#work--bunny-with-ears.works__item-block
-                img.works__item-img(src="./public/assets/images/bunny-with-ears-1.jpg")
-
+        each work in worksList
+            li.works__item
+                div.works__item-block(id= work.id)
+                    img.works__item-img(src= work.link)
 
 
